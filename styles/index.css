@@ -197,7 +197,6 @@ li {
     grid-area: right;
     display: grid;
     align-content: center;
-
     padding-top: 20px;
     padding-bottom: 50px;
 }
@@ -247,9 +246,23 @@ li {
     right: -5px;
 }
 
+.about-wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 100px;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--previewShadow);
+}
+
 @media screen and (max-width: 1200px) {
     .main-container {
-        width: 95%
+        width: 95%;
     }
 }
 
@@ -260,5 +273,9 @@ li {
             'nav-wrap'
             'left' 
             'right';
+    }
+
+    .right-column {
+        justify-content: center;
     }
 }
