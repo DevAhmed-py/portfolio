@@ -24,7 +24,8 @@ html, body {
 h1, h2, h3, h4, h5, h6, strong {
     color: var(--mainText);
     font-family: 'Russo One', sans-serif;
-    font-weight: 400;
+    /* font-family: 'Libre Bodoni', serif; */
+    /* font-weight: 700; */
 }
 
 h1 { font-size: 56px;}
@@ -146,6 +147,7 @@ li {
     height: 13rem;
     border-radius: 25%;
     border: 2px solid var(--borderColor);
+    object-fit:fill;
 }
 
 #theme-wrap {
@@ -262,9 +264,17 @@ li {
 
 .post-wrap {
     display: grid;
-    grid-template-columns: repeat(autofit, 320px);
+    grid-template-columns: repeat(auto-fit, 320px);
     gap: 20px;
     justify-content: center;
+    padding-bottom: 50px;
+}
+
+.post{
+	border:1px solid var(--borderColor);
+	-webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+	-moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+	box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
 }
 
 .thumbnail {
@@ -273,6 +283,33 @@ li {
     height: 180px;
     object-fit: cover;
 }
+
+.post-preview{
+	background-color: #fff;
+	padding:15px;
+}
+
+.post-title{
+	color:black;
+	margin: 0;
+}
+
+.post-intro{
+	color:#4b5156;
+	font-size: 14px;
+}
+
+.contact-wrap {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.contact-link {
+    font-size: 30px;
+    margin: 20px;
+}
+
 @media screen and (max-width: 1200px) {
     .main-container {
         width: 95%;
