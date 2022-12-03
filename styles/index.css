@@ -25,7 +25,6 @@ h1, h2, h3, h4, h5, h6, strong {
     color: var(--mainText);
     font-family: 'Russo One', sans-serif;
     /* font-family: 'Libre Bodoni', serif; */
-    /* font-weight: 700; */
 }
 
 h1 { font-size: 56px;}
