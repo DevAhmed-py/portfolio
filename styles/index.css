@@ -60,6 +60,12 @@ a {
     overflow: auto;
 }
 
+.s3 {
+    background-color: var(--mainColor);
+    border-bottom: 1px solid var(--borderColor);
+    overflow: auto;
+}
+
 .main-container {
     width: 1200px;
     margin: 0 auto;
@@ -91,6 +97,10 @@ a {
     display: inline-block;
     margin-right: 5px;
     margin-left: 5px;
+}
+
+.navigation li :hover {
+    border-bottom: 2px solid #fff;
 }
 
 .nav-dots {
@@ -271,10 +281,16 @@ a {
 }
 
 .post{
-	border:1px solid var(--borderColor);
+	border: 1px solid var(--borderColor);
+    transition: tranform 0.2s ease-out;
 	-webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
 	-moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
 	box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+}
+
+.post:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
 }
 
 .thumbnail {
@@ -303,12 +319,20 @@ a {
     display: flex;
     justify-content: center;
     margin: 20px;
+    padding-left: 0px;
 }
 
 .contact-link {
     font-size: 30px;
     margin: 20px;
+    transition: tranform 0.1s ease-in-out;
 }
+
+.contact-link:hover {
+    transform: translateY(-5px);
+}
+
+/* Media queries */
 
 @media screen and (max-width: 1200px) {
     .main-container {
@@ -317,6 +341,18 @@ a {
 }
 
 @media screen and (max-width: 800px) {
+    .about-wrap h4 {
+        text-align: center;
+    }
+
+    .about-wrap {
+        gap: 20px;
+    }
+
+    .s1 {
+        padding-bottom: 70px;
+    }
+    
     .intro-wrap {
         grid-template-columns: 1fr;
         grid-template-areas: 
