@@ -5,7 +5,7 @@
     --borderColor: #c1c1c1;
 
     --mainText: black;
-    --secondaryText: #4b5156;
+    --secondaryText: black;
 
     --themeDotBorder:#24292e;
 
@@ -23,6 +23,10 @@ html, body {
     padding: 0;
 }
 
+body * {
+    transition: 0.5s;
+}
+
 h1, h2, h3, h4, h5, h6, strong {
     color: var(--mainText);
     font-family: 'Russo One', sans-serif;
@@ -38,6 +42,7 @@ h6 { font-size: 16px;}
 
 p, li, span {
     font-family: 'Montserrat', sans-serif;
+    color: var(--secondaryText);
 }
 
 a {
@@ -156,8 +161,8 @@ a {
     display: block;
     margin: 0 auto;
     width: 13rem;
-    height: 13rem;
-    border-radius: 25%;
+    height: 15rem;
+    border-radius: 10px;
     border: 2px solid var(--borderColor);
     object-fit:fill;
 }
@@ -277,7 +282,7 @@ a {
 .post-wrap {
     display: grid;
     grid-template-columns: repeat(auto-fit, 320px);
-    gap: 20px;
+    gap: 60px;
     justify-content: center;
     padding-bottom: 50px;
 }
@@ -292,14 +297,13 @@ a {
 
 .post:hover {
     transform: translateY(-5px);
-    cursor: pointer;
 }
 
 .thumbnail {
     display: block;
     width: 100%;
-    height: 180px;
-    object-fit: cover;
+    height: 250px;
+    object-fit:fill;
 }
 
 .post-preview{
@@ -334,7 +338,7 @@ a {
     transform: translateY(-5px);
 }
 
-.copyright {
+#copyright {
     color: var(--copyrightColor); 
 }
 
