@@ -3,8 +3,8 @@ let themes = document.getElementsByClassName('theme')
 console.log('hey');
 
 for (let i=0; i < themes.length; i++) {
-    themes[i].addEventListener('click', () => {
-        let mode = themes.dataset.mode
+    themes[i].addEventListener('click', function() {
+        let mode = this.dataset.mode;
         console.log('clicked', mode)
         setTheme(mode)
     })   
