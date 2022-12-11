@@ -50,10 +50,6 @@ a {
     color: #17a2b8;
 }
 
-/* li {
-    list-style: none;
-} */
-
 .s1 {
     background-color: var(--mainColor);
     border-bottom: 1px solid var(--borderColor);
@@ -270,14 +266,25 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     padding-top: 30px;
     padding-bottom: 30px;
+    height: 60vh;
+    align-items: center;
     gap: 100px;
+}
+
+.about-me {
+    background-color: var(--previewShadow);
+    line-height: 2;
+    padding: 10px;
+    height: fit-content;
 }
 
 .skills {
     display: flex;
     justify-content: space-evenly;
     background-color: var(--previewShadow);
+    line-height: 2;
 }
+
 
 .post-wrap {
     display: grid;
@@ -358,6 +365,7 @@ a {
 
     .about-wrap {
         gap: 20px;
+        padding-bottom: 299px;
     }
 
     .s1 {
